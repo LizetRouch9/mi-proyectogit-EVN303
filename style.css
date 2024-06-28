@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  background: var(--back-color) ;
+}
+main{
+    transition: 0.8s;
+    background: #633974 ;
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.8s;
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to top,#633974,transparent);
+            z-index: 1;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+       
+        .personaje{
+            position: absolute;
+            top: 55%; 
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: contain;
+            width: 300px;
+            height: 300px;
+        }
+        #Butterfly1{
+            position: absolute;
+            top: 58%; 
+            left: 90%;
+            transform: translateX(-50%);
+            object-fit: contain;
+            width: 150px;
+            height: 150px;
+        }
+        #Butterfly2{
+            position: absolute;
+            top: 10%; 
+            left: 15%;
+            transform: translateX(-50%);
+            object-fit: contain;
+            width: 150px;
+            height: 150px;
+        }
+        #text{
+            position: relative;
+            color:#7942ef;
+            font-size: 10vw;
+            text-shadow: 0 0 5px #7942ef,
+            0 0 10px #a844fa;
+        }
+        
+
+    }
+    .sec{
+        position: relative;
+        min-height: 500px;
+        padding: 100px 50px;
+        overflow: hidden;
+        
+        .content{
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            h2{
+                font-size: 3.2em;
+                margin-bottom: 10px;
+                color:#AF7AC5;
+                font-family: 'Playwrite RO', Arial, Helvetica, sans-serif;
+            }
+    
+        }
+    }
+    }
+   
+
+h2{
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    color:#AF7AC5;
+    text-align: center;
+    font-family:"Playwrite US Modern",Arial, Helvetica, sans-serif;
+
+}
+#titulof{
+    font-family: 'Playwrite RO', Arial, Helvetica, sans-serif;
+}
+main .sec .content p {
+    text-align: center;
+    font-size: 1.2em;
+    color: aliceblue;
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*imagenes hove*/
+.destinosList{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+.box{
+    position: relative;
+    width: 350px;
+    height: 480px;
+    transition: 0.5s;
+    overflow: hidden;
+    margin: 15px;
+
+}
+.imgBx{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.content1{
+    opacity: 0.5;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinosList .box .content1 h3{
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.2em;
+
+}
+h3{
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+
+main .content1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.imgFit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+.box .content{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+span{
+    font-size: 0.8em;
+  
+    
+}
+.destinosList:hover >:not(:hover){
+    opacity: 0.3;
+}
+/*seccion2*/
+main #sec2{
+    position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.8s;
+        h2{
+            position: absolute;
+            top: 8%; 
+            left: 33%;
+            font-size: 3.2em;
+            margin-bottom: 10px;
+            color:#d07ff3;
+            text-align: center;
+            z-index: 2;
+            cursor: pointer;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px #d78af8;
+        }
+        h2 span{
+            transition: 0.5s;
+            font-family: 'Playwrite RO', Arial, Helvetica, sans-serif;
+          }
+          h2:hover span {
+            color: #dd98fb;
+            text-shadow: 0 0 10px #dd98fb,
+            0 0 20px #dd98fb,
+            0 0 40px #dd98fb,
+            0 0 80px #dd98fb;
+          }
+          h2:hover span:nth-child(1){
+            margin-right: 30px;
+          }
+          h2:hover span:nth-child(2){
+            margin-left: 30px;
+          }
+          p{
+                text-align: center;
+                font-size: 1.2em;
+                color: #4a484b;
+                z-index: 2;            
+          }
+          p:hover{
+            color: #f9f4fb;
+            text-shadow: 0 0 10px #adf8fc,
+            0 0 20px #adf8fc,
+            0 0 40px #adf8fc,
+            0 0 80px #adf8fc;  
+      }
+}
+.sec2-bg{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+main #sec2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+    background: linear-gradient(to top,#633974,transparent)
+}
+main #sec2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1000;
+    background: linear-gradient(to bottom,#633974,transparent)
+}
+ 
+.snow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #adf8fc;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+.snow:nth-child(1){
+    opacity: 0.8;
+    transform: translate(10vw, -10px);
+    animation: fall-1 25s linear infinite;
+}
+@keyframes fall-1{
+    35%{
+        transform: translate(30vw, 35vh);
+    }
+    to{
+        transform: translate(50vw, 100vh);
+    }
+}
+.snow:nth-child(2){
+    opacity: 0.5;
+    transform: translate(20vw, -10px) scale(0.5);
+    animation: fall-2 20s linear infinite;
+}
+@keyframes fall-2{
+    35%{
+        transform: translate(40vw, 45vh) scale(0.5);
+    }
+    to{
+        transform: translate(60vw, 100vh) scale(0.5);
+    }
+}
+.snow:nth-child(3){
+    opacity: 0.3;
+    transform: translate(70vw, 35vh) scale(0.2);
+    animation: fall-3 20s linear infinite;
+}
+@keyframes fall-3{
+    35%{
+        transform: translate(80vw, 65vh) scale(0.2);
+    }
+    to{
+        transform: translate(90vw, 100vh) scale(0.2);
+    }
+}
+.snow:nth-child(4){
+    opacity: 1;
+    transform: translate(90vw, 10vh) scale(0.7);
+    animation: fall-4 20s linear infinite;
+}
+@keyframes fall-4{
+    35%{
+        transform: translate(70vw, 65vh) scale(0.7);
+    }
+    to{
+        transform: translate(50vw, 100vh) scale(0.7);
+    }
+}
+.snow:nth-child(5){
+    opacity: 1;
+    transform: translate(10vw, 20vh) scale(0.7);
+    animation: fall-5 15s linear infinite;
+}
+@keyframes fall-5{
+    35%{
+        transform: translate(30vw, 65vh) scale(0.7);
+    }
+    to{
+        transform: translate(50vw, 100vh) scale(0.7);
+    }
+}
+.snow:nth-child(6){
+    opacity: 0.6;
+    transform: translate(45vw, 20vh) scale(0.8);
+    animation: fall-6 20s linear infinite;
+}
+@keyframes fall-6{
+    35%{
+        transform: translate(65vw, 65vh) scale(0.8);
+    }
+    to{
+        transform: translate(85vw, 100vh) scale(0.8);
+    }
+}
+.snow:nth-child(7){
+    opacity: 1;
+    transform: translate(55vw, 80vh) scale(0.9);
+    animation: fall-7 20s linear infinite;
+}
+@keyframes fall-7{
+    35%{
+        transform: translate(35vw, 55vh) scale(0.9);
+    }
+    to{
+        transform: translate(15vw, 100vh) scale(0.9);
+    }
+}
+.snow:nth-child(8){
+    opacity: 1;
+    transform: translate(30vw, -5vh) scale(1);
+    animation: fall-8 20s linear infinite;
+}
+@keyframes fall-8{
+    35%{
+        transform: translate(50vw, 65vh) scale(1);
+    }
+    to{
+        transform: translate(70vw, 100vh) scale(1);
+    }
+}
+.snow:nth-child(9){
+    opacity: 0.9;
+    transform: translate(60vw, 20vh) scale(0.5);
+    animation: fall-9 20s linear infinite;
+}
+@keyframes fall-9{
+    35%{
+        transform: translate(40vw, 10vh) scale(0.5);
+    }
+    to{
+        transform: translate(20vw, 100vh) scale(0.5);
+    }
+}
+.snow:nth-child(10){
+    opacity: 1.5;
+    transform: translate(50vw, 30vh) scale(0.8);
+    animation: fall-10 20s linear infinite;
+}
+@keyframes fall-10{
+    35%{
+        transform: translate(70vw, 50vh) scale(0.8);
+    }
+    to{
+        transform: translate(90vw, 100vh) scale(0.8);
+    }
+}
+.snow:nth-child(11){
+    opacity: 0.7;
+    transform: translate(15vw, -10px) scale(0.4);
+    animation: fall-11 18s linear infinite;
+}
+@keyframes fall-11{
+    35%{
+        transform: translate(25vw, 40vh) scale(0.4);
+    }
+    to{
+        transform: translate(35vw, 100vh) scale(0.4);
+    }
+}
+.snow:nth-child(12){
+    opacity: 0.4;
+    transform: translate(35vw, 5vh) scale(0.6);
+    animation: fall-12 22s linear infinite;
+}
+@keyframes fall-12{
+    35%{
+        transform: translate(55vw, 50vh) scale(0.6);
+    }
+    to{
+        transform: translate(75vw, 100vh) scale(0.6);
+    }
+}
+.snow:nth-child(13){
+    opacity: 0.5;
+    transform: translate(75vw, 15vh) scale(0.3);
+    animation: fall-13 24s linear infinite;
+}
+@keyframes fall-13{
+    35%{
+        transform: translate(65vw, 55vh) scale(0.3);
+    }
+    to{
+        transform: translate(55vw, 100vh) scale(0.3);
+    }
+}
+.snow:nth-child(14){
+    opacity: 0.8;
+    transform: translate(5vw, -10px) scale(0.5);
+    animation: fall-14 19s linear infinite;
+}
+@keyframes fall-14{
+    35%{
+        transform: translate(25vw, 60vh) scale(0.5);
+    }
+    to{
+        transform: translate(45vw, 100vh) scale(0.5);
+    }
+}
+.snow:nth-child(15){
+    opacity: 0.6;
+    transform: translate(85vw, 10vh) scale(0.7);
+    animation: fall-15 21s linear infinite;
+}
+@keyframes fall-15{
+    35%{
+        transform: translate(75vw, 70vh) scale(0.7);
+    }
+    to{
+        transform: translate(65vw, 100vh) scale(0.7);
+    }
+}
+article{
+    background: #633974;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+article .contentBox{
+ width: 50%;
+ text-align: end;
+ padding-right: 40px;
+}
+.titleText{
+ font-weight: 600;
+ margin-bottom: 10px;
+ font-size: 2.5em;
+ margin-bottom: 10px;
+color:#AF7AC5;
+text-shadow: 0 0 5px #bc8fcf;
+}
+.text{
+    color:#ffffff;
+    font-size: 1.3em;
+    text-align: center;
+    
+}
+.imgBox{
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+    
+}
+.imgBox img{
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.snow1{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e7b4fd;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #eec7fe);
+}
+.snow1:nth-child(1){
+    opacity: 0.8;
+    transform: translate(10vw, -10px);
+    animation: fall-1 25s linear infinite;
+}
+@keyframes fall-1{
+    35%{
+        transform: translate(30vw, 35vh);
+    }
+    to{
+        transform: translate(50vw, 100vh);
+    }
+}
+.snow1:nth-child(2){
+    opacity: 0.5;
+    transform: translate(20vw, -10px) scale(0.5);
+    animation: fall-2 20s linear infinite;
+}
+@keyframes fall-2{
+    35%{
+        transform: translate(40vw, 45vh) scale(0.5);
+    }
+    to{
+        transform: translate(60vw, 100vh) scale(0.5);
+    }
+}
+.snow1:nth-child(3){
+    opacity: 0.3;
+    transform: translate(70vw, 35vh) scale(0.2);
+    animation: fall-3 20s linear infinite;
+}
+@keyframes fall-3{
+    35%{
+        transform: translate(80vw, 65vh) scale(0.2);
+    }
+    to{
+        transform: translate(90vw, 100vh) scale(0.2);
+    }
+}
+.snow1:nth-child(4){
+    opacity: 1;
+    transform: translate(90vw, 10vh) scale(0.7);
+    animation: fall-4 20s linear infinite;
+}
+@keyframes fall-4{
+    35%{
+        transform: translate(70vw, 65vh) scale(0.7);
+    }
+    to{
+        transform: translate(50vw, 100vh) scale(0.7);
+    }
+}
+.snow1:nth-child(5){
+    opacity: 1;
+    transform: translate(10vw, 20vh) scale(0.7);
+    animation: fall-5 15s linear infinite;
+}
+@keyframes fall-5{
+    35%{
+        transform: translate(30vw, 65vh) scale(0.7);
+    }
+    to{
+        transform: translate(50vw, 100vh) scale(0.7);
+    }
+}
+.snow1:nth-child(6){
+    opacity: 0.6;
+    transform: translate(45vw, 20vh) scale(0.8);
+    animation: fall-6 20s linear infinite;
+}
+@keyframes fall-6{
+    35%{
+        transform: translate(65vw, 65vh) scale(0.8);
+    }
+    to{
+        transform: translate(85vw, 100vh) scale(0.8);
+    }
+}
+.snow1:nth-child(7){
+    opacity: 1;
+    transform: translate(55vw, 80vh) scale(0.9);
+    animation: fall-7 20s linear infinite;
+}
+@keyframes fall-7{
+    35%{
+        transform: translate(35vw, 55vh) scale(0.9);
+    }
+    to{
+        transform: translate(15vw, 100vh) scale(0.9);
+    }
+}
+.snow1:nth-child(8){
+    opacity: 1;
+    transform: translate(30vw, -5vh) scale(1);
+    animation: fall-8 20s linear infinite;
+}
+@keyframes fall-8{
+    35%{
+        transform: translate(50vw, 65vh) scale(1);
+    }
+    to{
+        transform: translate(70vw, 100vh) scale(1);
+    }
+}
+.snow1:nth-child(9){
+    opacity: 0.9;
+    transform: translate(60vw, 20vh) scale(0.5);
+    animation: fall-9 20s linear infinite;
+}
+@keyframes fall-9{
+    35%{
+        transform: translate(40vw, 10vh) scale(0.5);
+    }
+    to{
+        transform: translate(20vw, 100vh) scale(0.5);
+    }
+}
+.snow1:nth-child(10){
+    opacity: 1.5;
+    transform: translate(50vw, 30vh) scale(0.8);
+    animation: fall-10 20s linear infinite;
+}
+@keyframes fall-10{
+    35%{
+        transform: translate(70vw, 50vh) scale(0.8);
+    }
+    to{
+        transform: translate(90vw, 100vh) scale(0.8);
+    }
+}
+.snow1:nth-child(11){
+    opacity: 0.7;
+    transform: translate(15vw, -10px) scale(0.4);
+    animation: fall-11 18s linear infinite;
+}
+@keyframes fall-11{
+    35%{
+        transform: translate(25vw, 40vh) scale(0.4);
+    }
+    to{
+        transform: translate(35vw, 100vh) scale(0.4);
+    }
+}
+.snow1:nth-child(12){
+    opacity: 0.4;
+    transform: translate(35vw, 5vh) scale(0.6);
+    animation: fall-12 22s linear infinite;
+}
+@keyframes fall-12{
+    35%{
+        transform: translate(55vw, 50vh) scale(0.6);
+    }
+    to{
+        transform: translate(75vw, 100vh) scale(0.6);
+    }
+}
+.snow1:nth-child(13){
+    opacity: 0.5;
+    transform: translate(75vw, 15vh) scale(0.3);
+    animation: fall-13 24s linear infinite;
+}
+@keyframes fall-13{
+    35%{
+        transform: translate(65vw, 55vh) scale(0.3);
+    }
+    to{
+        transform: translate(55vw, 100vh) scale(0.3);
+    }
+}
+.snow1:nth-child(14){
+    opacity: 0.8;
+    transform: translate(5vw, -10px) scale(0.5);
+    animation: fall-14 19s linear infinite;
+}
+@keyframes fall-14{
+    35%{
+        transform: translate(25vw, 60vh) scale(0.5);
+    }
+    to{
+        transform: translate(45vw, 100vh) scale(0.5);
+    }
+}
+.snow1:nth-child(15){
+    opacity: 0.6;
+    transform: translate(85vw, 10vh) scale(0.7);
+    animation: fall-15 21s linear infinite;
+}
+@keyframes fall-15{
+    35%{
+        transform: translate(75vw, 70vh) scale(0.7);
+    }
+    to{
+        transform: translate(65vw, 100vh) scale(0.7);
+    }
+}
